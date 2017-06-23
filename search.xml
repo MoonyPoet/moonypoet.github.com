@@ -3,6 +3,22 @@
   
     
     <entry>
+      <title><![CDATA[CentOS修改SSH端口后的scp与git]]></title>
+      <url>/2017/06/23/CentOS%E4%BF%AE%E6%94%B9SSH%E7%AB%AF%E5%8F%A3%E5%90%8E%E7%9A%84scp%E4%B8%8Egit/</url>
+      <content type="html"><![CDATA[<p>#赋</p>
+<p>让我们换个姿势相爱，<br>以那不为世人所熟知的。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> math </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[myFirstPost]]></title>
       <url>/2017/06/06/myFirstPost/</url>
       <content type="html"></content>
