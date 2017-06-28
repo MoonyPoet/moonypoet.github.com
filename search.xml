@@ -9,11 +9,16 @@
 <hr>
 <ol>
 <li>首先你必须拥有一个VPS，建议上<a href="https://bandwagonhost.com/aff.php?aff=16425" target="_blank" rel="external">搬瓦工官网</a>买个最便宜的VPS，如果你只是用来翻墙的话。</li>
-<li>如果你买好了，那么进入你的services主页，如下图：<br><img src="../../../../img/17062601.jpg" alt="picture01"></li>
-<li>点击进入VPS控制面板，如下图：<br><img src="../../../../img/17062602.jpg" alt="picture02"></li>
-<li>点击Shadowsocks Server选项，并install。如下图：<br><img src="../../../../img/17062603.jpg" alt="picture03"></li>
+<li>如果你买好了，那么进入你的services主页。<br><img src="../../../../img/17062601.jpg" alt=""></li>
+<li>点击进入VPS控制面板，如下图：<br><img src="../../../../img/17062602.jpg" alt=""></li>
+<li>点击Shadowsocks Server选项，并install。<br><img src="../../../../img/17062603.jpg" alt=""></li>
+<li>install成功后，跳转至如下界面，记录下你的server port和server password（可更改）。<br><img src="../../../../img/17062604.jpg" alt=""></li>
+<li>下载<a href="http://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">shadowsocks客户端</a>,并安装。</li>
+<li>编辑服务器，填入IP、第5步的port和password，并自定义一个代理端口，如23333。<br><img src="../../../../img/17062605.jpg" alt=""></li>
+<li>启动shadowsocks，给你需要翻墙的应用设置代理，以火狐为例。<br>选项-&gt;高级-&gt;网络-&gt;连接-&gt;设置<br><img src="../../../../img/17062606.jpg" alt=""><br>手动配置代理，SOCKS主机：localhost，端口：23333。<br><img src="../../../../img/17062607.jpg" alt=""></li>
 </ol>
-<p>待续。。。</p>
+<hr>
+<p><strong>恭喜你，你可以尽情去浪了~~~23333333</strong></p>
 ]]></content>
       
         <categories>
