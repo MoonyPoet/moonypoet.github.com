@@ -3,6 +3,68 @@
   
     
     <entry>
+      <title><![CDATA[ES6学习笔记（一）]]></title>
+      <url>/2017/06/29/ECMAScript6StudyNotes-01/</url>
+      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;还没能够亲吻你，<br>&nbsp;&nbsp;&nbsp;&nbsp;却连发梢，都已触摸不及。</p>
+<hr>
+<p>ECMAScript 2015 (6th Edition)是目前ECMAScript语言规范的标准。通常被称为”ES6”。<br>而ECMAScript 2017 今年已经确定最终功能集。<br>（如果回到两年前，谁要是再跟我提前端，我就跟谁急。呵，呵）</p>
+<p><strong>JavaScript版本列表</strong><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript" target="_blank" rel="external">JavaScript更新</a><br>BTW.Mozilla开发者网络真是个不错的东西</p>
+<hr>
+<p><strong>检验浏览器ES6支持情况的工具</strong></p>
+<p>你可以使用比较标准的站点查看支持情况:<a href="https://kangax.github.io/compat-table/es6/" target="_blank" rel="external">ECMAScript compatibility table</a><br><br></p>
+<p>也可以使用傻瓜式的在线测试工具<br><a href="https://ruanyf.github.io/es-checker/index.cn.html" target="_blank" rel="external">你的浏览器支持 ES6 吗？ - ES-Checker</a><br><br></p>
+<p>根据傻瓜式分析，现阶段浏览器支持情况如下：</p>
+<table>
+<thead>
+<tr>
+<th>浏览器</th>
+<th style="text-align:center">支持率</th>
+<th style="text-align:center">不支持特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge 40.15063.0.0</td>
+<td style="text-align:center"><strong>95%</strong></td>
+<td style="text-align:center">模块的export命令/模板的import命令<br>(厉害了，我的Edge)</td>
+</tr>
+<tr>
+<td>Firefox54.0</td>
+<td style="text-align:center">90%</td>
+<td style="text-align:center">尾调用优化<br>数组的实例方法<br>模块的export命令/模板的import命令</td>
+</tr>
+<tr>
+<td>Chrome58.0.3029.96</td>
+<td style="text-align:center">90%</td>
+<td style="text-align:center">同上</td>
+</tr>
+<tr>
+<td>IE11</td>
+<td style="text-align:center">10%</td>
+<td style="text-align:center">不予评论</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      
+        <categories>
+            
+            <category> 摸爬滚打 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ECMAScript6 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[从搬瓦工服务器到翻墙神器]]></title>
       <url>/2017/06/26/260617-shadowsocks/</url>
       <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;其实地上本没有墙，<br>&nbsp;&nbsp;&nbsp;&nbsp;翻的人多了，也便成了墙。</p>
