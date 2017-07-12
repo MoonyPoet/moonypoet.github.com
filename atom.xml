@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MoonyPoet</title>
+  <subtitle>What Do You Want To Be</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://moonypoet.github.io/"/>
+  <updated>2017-07-12T14:55:04.900Z</updated>
+  <id>http://moonypoet.github.io/</id>
+  
+  <author>
+    <name>MoonyPoet</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《送你一匹马》摘要式笔记</title>
+    <link href="http://moonypoet.github.io/2017/07/12/%E3%80%8A%E9%80%81%E4%BD%A0%E4%B8%80%E5%8C%B9%E9%A9%AC%E3%80%8B%E6%91%98%E8%A6%81%E5%BC%8F%E7%AC%94%E8%AE%B0/"/>
+    <id>http://moonypoet.github.io/2017/07/12/《送你一匹马》摘要式笔记/</id>
+    <published>2017-07-12T14:22:58.000Z</published>
+    <updated>2017-07-12T14:55:04.900Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》"><a href="#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》" class="headerlink" title="书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》"></a>书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》</h2><h2 id="作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛"><a href="#作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛" class="headerlink" title="作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛"></a>作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛</h2><h2 id="出版社-nbsp-nbsp-北京十月文艺出版社"><a href="#出版社-nbsp-nbsp-北京十月文艺出版社" class="headerlink" title="出版社&nbsp;-&nbsp;北京十月文艺出版社"></a>出版社&nbsp;-&nbsp;北京十月文艺出版社</h2><p><strong># 爱马</strong></p>
+<blockquote>
+<p>并不执著于拥有一匹摸得着的骏马，那样就也只有一匹了，这个不够，有了真马，落了实相，不自由，反而怅然若失。</p>
+</blockquote>
+<p><strong># 梦里不知身是客</strong></p>
+<blockquote>
+<p>这当然是欺人，却没有法子自欺。</p>
+<p>好字触目，却不惊心。</p>
+</blockquote>
+<p><strong># 野火烧不尽</strong></p>
+<blockquote>
+<p>一个好农夫，当田就在你面前的时候，你不能再去做梦。</p>
+<p>那么有教无类吧，孩子，你的脸上，已经溅到了书本的花瓣，老师，再给你一朵花。</p>
+<p>战国之后，才有春秋。</p>
+<p>它是值得的，里面没有如果。</p>
+<p>书，在生活行事为人上不用出来，便是白读。</p>
+<p>春风化雨，谁有事春风？谁又是雨？</p>
+<p>学问，是一张渔网，一个结一个结，结出了捕鱼的工具。</p>
+<p>但是急流勇退之前的持、守、进、执的坚持仍然有待时间的考验和自我价值的判断与选择。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》&quot;&gt;&lt;a href=&quot;#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》&quot; class=&quot;headerlink&quot; title=&quot;书名&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;n
+    
+    </summary>
+    
+      <category term="金屋玉颜" scheme="http://moonypoet.github.io/categories/%E9%87%91%E5%B1%8B%E7%8E%89%E9%A2%9C/"/>
+    
+    
+      <category term="三毛" scheme="http://moonypoet.github.io/tags/%E4%B8%89%E6%AF%9B/"/>
+    
+      <category term="摘要式笔记" scheme="http://moonypoet.github.io/tags/%E6%91%98%E8%A6%81%E5%BC%8F%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6学习笔记（一）</title>
+    <link href="http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/"/>
+    <id>http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/</id>
+    <published>2017-06-29T14:29:44.000Z</published>
+    <updated>2017-06-29T15:37:34.394Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;还没能够亲吻你，<br>&nbsp;&nbsp;&nbsp;&nbsp;却连发梢，都已触摸不及。</p>
+<hr>
+<p>ECMAScript 2015 (6th Edition)是目前ECMAScript语言规范的标准。通常被称为”ES6”。<br>而ECMAScript 2017 今年已经确定最终功能集。<br>（如果回到两年前，谁要是再跟我提前端，我就跟谁急。呵，呵）</p>
+<p><strong>JavaScript版本列表</strong><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/New_in_JavaScript" target="_blank" rel="external">JavaScript更新</a><br>BTW.Mozilla开发者网络真是个不错的东西</p>
+<hr>
+<p><strong>检验浏览器ES6支持情况的工具</strong></p>
+<p>你可以使用比较标准的站点查看支持情况:<a href="https://kangax.github.io/compat-table/es6/" target="_blank" rel="external">ECMAScript compatibility table</a><br><br></p>
+<p>也可以使用傻瓜式的在线测试工具<br><a href="https://ruanyf.github.io/es-checker/index.cn.html" target="_blank" rel="external">你的浏览器支持 ES6 吗？ - ES-Checker</a><br><br></p>
+<p>根据傻瓜式分析，现阶段浏览器支持情况如下：</p>
+<table>
+<thead>
+<tr>
+<th>浏览器</th>
+<th style="text-align:center">支持率</th>
+<th style="text-align:center">不支持特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge 40.15063.0.0</td>
+<td style="text-align:center"><strong>95%</strong></td>
+<td style="text-align:center">模块的export命令/模板的import命令<br>(厉害了，我的Edge)</td>
+</tr>
+<tr>
+<td>Firefox54.0</td>
+<td style="text-align:center">90%</td>
+<td style="text-align:center">尾调用优化<br>数组的实例方法<br>模块的export命令/模板的import命令</td>
+</tr>
+<tr>
+<td>Chrome58.0.3029.96</td>
+<td style="text-align:center">90%</td>
+<td style="text-align:center">同上</td>
+</tr>
+<tr>
+<td>IE11</td>
+<td style="text-align:center">10%</td>
+<td style="text-align:center">不予评论</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;还没能够亲吻你，&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;却连发梢，都已触摸不及。&lt;/
+    
+    </summary>
+    
+      <category term="摸爬滚打" scheme="http://moonypoet.github.io/categories/%E6%91%B8%E7%88%AC%E6%BB%9A%E6%89%93/"/>
+    
+    
+      <category term="ECMAScript6" scheme="http://moonypoet.github.io/tags/ECMAScript6/"/>
+    
+      <category term="JavaScript" scheme="http://moonypoet.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从搬瓦工服务器到翻墙神器</title>
+    <link href="http://moonypoet.github.io/2017/06/26/260617-shadowsocks/"/>
+    <id>http://moonypoet.github.io/2017/06/26/260617-shadowsocks/</id>
+    <published>2017-06-26T15:50:36.000Z</published>
+    <updated>2017-06-28T15:20:56.731Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;其实地上本没有墙，<br>&nbsp;&nbsp;&nbsp;&nbsp;翻的人多了，也便成了墙。</p>
+<hr>
+<ol>
+<li>首先你必须拥有一个VPS，建议上<a href="https://bandwagonhost.com/aff.php?aff=16425" target="_blank" rel="external">搬瓦工官网</a>买个最便宜的VPS，如果你只是用来翻墙的话。</li>
+<li>如果你买好了，那么进入你的services主页。<br><img src="../../../../img/17062601.jpg" alt=""></li>
+<li>点击进入VPS控制面板，如下图：<br><img src="../../../../img/17062602.jpg" alt=""></li>
+<li>点击Shadowsocks Server选项，并install。<br><img src="../../../../img/17062603.jpg" alt=""></li>
+<li>install成功后，跳转至如下界面，记录下你的server port和server password（可更改）。<br><img src="../../../../img/17062604.jpg" alt=""></li>
+<li>下载<a href="http://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">shadowsocks客户端</a>,并安装。</li>
+<li>编辑服务器，填入IP、第5步的port和password，并自定义一个代理端口，如23333。<br><img src="../../../../img/17062605.jpg" alt=""></li>
+<li>启动shadowsocks，给你需要翻墙的应用设置代理，以火狐为例。<br>选项-&gt;高级-&gt;网络-&gt;连接-&gt;设置<br><img src="../../../../img/17062606.jpg" alt=""><br>手动配置代理，SOCKS主机：localhost，端口：23333。<br><img src="../../../../img/17062607.jpg" alt=""></li>
+</ol>
+<hr>
+<p><strong>恭喜你，你可以尽情去浪了~~~23333333</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;其实地上本没有墙，&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;翻的人多了，也便成了墙。&lt;
+    
+    </summary>
+    
+      <category term="奇技淫巧" scheme="http://moonypoet.github.io/categories/%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7/"/>
+    
+    
+      <category term="搬瓦工" scheme="http://moonypoet.github.io/tags/%E6%90%AC%E7%93%A6%E5%B7%A5/"/>
+    
+      <category term="Shadowsocks" scheme="http://moonypoet.github.io/tags/Shadowsocks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS修改SSH端口后的scp与git</title>
+    <link href="http://moonypoet.github.io/2017/06/23/CentOS%E4%BF%AE%E6%94%B9SSH%E7%AB%AF%E5%8F%A3%E5%90%8E%E7%9A%84scp%E4%B8%8Egit/"/>
+    <id>http://moonypoet.github.io/2017/06/23/CentOS修改SSH端口后的scp与git/</id>
+    <published>2017-06-23T03:32:07.000Z</published>
+    <updated>2017-06-26T15:49:17.325Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;让我们换个姿势相爱，<br>&nbsp;&nbsp;&nbsp;&nbsp;以那些不为人所熟知的。</p>
+<hr>
+<p>CentOS默认的SSH端口一般为<strong>20</strong>，网上找的大部分案例也都是使用这个端口。<br>但为了防止有些脚本<em>恶意扫描</em>，建议修改SSH端口，例如：23333。</p>
+<p>那么接下来相对应的，scp与git命令也要带上特定的端口，才能正常使用。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#scp</span> -P <span class="number">23333</span> ~/.ssh/id_rsa<span class="selector-class">.pub</span> root@yourserviceIP:~/</div><div class="line"><span class="selector-id">#git</span> clone git@yourserviceIP:<span class="number">23333</span>/home/git/gitosis-admin.git</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;让我们换个姿势相爱，&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;以那些不为人所熟知的。&lt;
+    
+    </summary>
+    
+      <category term="疑难杂症" scheme="http://moonypoet.github.io/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/"/>
+    
+    
+      <category term="CentOS" scheme="http://moonypoet.github.io/tags/CentOS/"/>
+    
+      <category term="SSH" scheme="http://moonypoet.github.io/tags/SSH/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>myFirstPost</title>
+    <link href="http://moonypoet.github.io/2017/06/06/myFirstPost/"/>
+    <id>http://moonypoet.github.io/2017/06/06/myFirstPost/</id>
+    <published>2017-06-06T14:20:02.000Z</published>
+    <updated>2017-06-06T14:20:02.451Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://moonypoet.github.io/2017/06/06/hello-world/"/>
+    <id>http://moonypoet.github.io/2017/06/06/hello-world/</id>
+    <published>2017-06-06T13:04:48.793Z</published>
+    <updated>2017-06-06T13:04:48.793Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
