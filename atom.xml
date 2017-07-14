@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://moonypoet.github.io/"/>
-  <updated>2017-07-13T15:10:38.459Z</updated>
+  <updated>2017-07-14T00:25:43.063Z</updated>
   <id>http://moonypoet.github.io/</id>
   
   <author>
@@ -16,17 +16,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ECMAScript6StudyNotes-02</title>
+    <title>ES6学习笔记（二）</title>
     <link href="http://moonypoet.github.io/2017/07/13/ECMAScript6StudyNotes-02/"/>
     <id>http://moonypoet.github.io/2017/07/13/ECMAScript6StudyNotes-02/</id>
     <published>2017-07-13T14:33:31.000Z</published>
-    <updated>2017-07-13T15:10:38.459Z</updated>
+    <updated>2017-07-14T00:25:43.063Z</updated>
     
     <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>任你在全世界妖娆<br>我只在花园里绽放</p>
 </blockquote>
 <hr>
-<p><strong># for循环</strong><br>JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。（这就是为什么每次重声明变量，还是会累加的原因）</p>
-<p>另外，for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。栗子如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</div><div class="line">  <span class="keyword">let</span> i = <span class="string">'abc'</span>;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div></pre></td></tr></table></figure></p>
+<h1 id="let-和-const-命令"><a href="#let-和-const-命令" class="headerlink" title="let 和 const 命令"></a>let 和 const 命令</h1><p><strong># for循环</strong></p>
+<p>JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。（这就是为什么每次重声明变量，还是会累加的原因）</p>
+<p>另外，for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。</p>
+<p>栗子如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</div><div class="line">  <span class="keyword">let</span> i = <span class="string">'abc'</span>;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div></pre></td></tr></table></figure></p>
 <p><strong># let</strong></p>
 <ul>
 <li>只在代码块内生效</li>
@@ -34,15 +37,16 @@
 <li>不允许重复声明</li>
 </ul>
 <p><strong># 块级作用域</strong></p>
-<p>无块作用域饿情况：内层变量可能会覆盖外层变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> tmp = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(tmp);</div><div class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</div><div class="line">    <span class="keyword">var</span> tmp = <span class="string">'hello world'</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">f(); <span class="comment">// undefined</span></div></pre></td></tr></table></figure></p>
+<p>无块作用域的情况：内层变量可能会覆盖外层变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> tmp = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(tmp);</div><div class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</div><div class="line">    <span class="keyword">var</span> tmp = <span class="string">'hello world'</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">f(); <span class="comment">// undefined</span></div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
       &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;任你在全世界妖娆&lt;br&gt;我只在花园里绽放&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;# for循环&lt;/strong&gt;&lt;br&gt;JavaScript 引擎内
+&lt;h1 id=&quot;let-和-con
     
     </summary>
     
@@ -60,7 +64,7 @@
     <link href="http://moonypoet.github.io/2017/07/12/%E3%80%8A%E9%80%81%E4%BD%A0%E4%B8%80%E5%8C%B9%E9%A9%AC%E3%80%8B%E6%91%98%E8%A6%81%E5%BC%8F%E7%AC%94%E8%AE%B0/"/>
     <id>http://moonypoet.github.io/2017/07/12/《送你一匹马》摘要式笔记/</id>
     <published>2017-07-12T14:22:58.000Z</published>
-    <updated>2017-07-13T14:14:15.627Z</updated>
+    <updated>2017-07-14T00:23:58.459Z</updated>
     
     <content type="html"><![CDATA[<h2 id="书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》"><a href="#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》" class="headerlink" title="书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》"></a>书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》</h2><h2 id="作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛"><a href="#作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛" class="headerlink" title="作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛"></a>作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛</h2><h2 id="出版社-nbsp-nbsp-北京十月文艺出版社"><a href="#出版社-nbsp-nbsp-北京十月文艺出版社" class="headerlink" title="出版社&nbsp;-&nbsp;北京十月文艺出版社"></a>出版社&nbsp;-&nbsp;北京十月文艺出版社</h2><p><strong># 爱马</strong></p>
 <blockquote>
@@ -83,7 +87,8 @@
 <p>但是急流勇退之前的持、守、进、执的坚持仍然有待时间的考验和自我价值的判断与选择。</p>
 </blockquote>
 <hr>
-<p>17.07.13<br><strong># 野火烧不尽</strong></p>
+<p>17.07.13 更</p>
+<p><strong># 野火烧不尽</strong></p>
 <blockquote>
 <p>田在发芽了，守田的人，你能不能走？</p>
 <p>我不戴表，可是我知道已是什么时刻。</p>
@@ -115,10 +120,10 @@
     <link href="http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/"/>
     <id>http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/</id>
     <published>2017-06-29T14:29:44.000Z</published>
-    <updated>2017-07-13T14:37:33.519Z</updated>
+    <updated>2017-07-14T00:23:28.370Z</updated>
     
     <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
-<p>还没能够亲吻你，<br>却连发梢，都已触摸不及。</p>
+<p>还没能够亲吻你<br>却连发梢，都已触摸不及</p>
 </blockquote>
 <hr>
 <p>ECMAScript 2015 (6th Edition)是目前ECMAScript语言规范的标准。通常被称为”ES6”。<br>而ECMAScript 2017 今年已经确定最终功能集。<br>（如果回到两年前，谁要是再跟我提前端，我就跟谁急。呵，呵）</p>
@@ -164,10 +169,10 @@
     <summary type="html">
     
       &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;还没能够亲吻你，&lt;br&gt;却连发梢，都已触摸不及。&lt;/p&gt;
+&lt;p&gt;还没能够亲吻你&lt;br&gt;却连发梢，都已触摸不及&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;p&gt;ECMAScript
+&lt;p&gt;ECMAScript 2
     
     </summary>
     
