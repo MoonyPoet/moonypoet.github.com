@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>MoonyPoet</title>
-  <subtitle>What Do You Want To Be</subtitle>
+  <subtitle>所有近乎残忍的坚持，背后都隐藏着欲望的鬼魅</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://moonypoet.github.io/"/>
@@ -190,9 +190,11 @@
     <link href="http://moonypoet.github.io/2017/06/26/260617-shadowsocks/"/>
     <id>http://moonypoet.github.io/2017/06/26/260617-shadowsocks/</id>
     <published>2017-06-26T15:50:36.000Z</published>
-    <updated>2017-06-28T15:20:56.731Z</updated>
+    <updated>2017-07-14T00:37:09.968Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;其实地上本没有墙，<br>&nbsp;&nbsp;&nbsp;&nbsp;翻的人多了，也便成了墙。</p>
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>其实地上本没有墙<br>人心复杂了，也便有了墙</p>
+</blockquote>
 <hr>
 <ol>
 <li>首先你必须拥有一个VPS，建议上<a href="https://bandwagonhost.com/aff.php?aff=16425" target="_blank" rel="external">搬瓦工官网</a>买个最便宜的VPS，如果你只是用来翻墙的话。</li>
@@ -210,7 +212,12 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;其实地上本没有墙，&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;翻的人多了，也便成了墙。&lt;
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;其实地上本没有墙&lt;br&gt;人心复杂了，也便有了墙&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;首先你必须
     
     </summary>
     
@@ -228,9 +235,11 @@
     <link href="http://moonypoet.github.io/2017/06/23/CentOS%E4%BF%AE%E6%94%B9SSH%E7%AB%AF%E5%8F%A3%E5%90%8E%E7%9A%84scp%E4%B8%8Egit/"/>
     <id>http://moonypoet.github.io/2017/06/23/CentOS修改SSH端口后的scp与git/</id>
     <published>2017-06-23T03:32:07.000Z</published>
-    <updated>2017-06-26T15:49:17.325Z</updated>
+    <updated>2017-07-14T00:35:52.891Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;让我们换个姿势相爱，<br>&nbsp;&nbsp;&nbsp;&nbsp;以那些不为人所熟知的。</p>
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>让我们换个姿势相爱<br>以那不为人所熟知的</p>
+</blockquote>
 <hr>
 <p>CentOS默认的SSH端口一般为<strong>20</strong>，网上找的大部分案例也都是使用这个端口。<br>但为了防止有些脚本<em>恶意扫描</em>，建议修改SSH端口，例如：23333。</p>
 <p>那么接下来相对应的，scp与git命令也要带上特定的端口，才能正常使用。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#scp</span> -P <span class="number">23333</span> ~/.ssh/id_rsa<span class="selector-class">.pub</span> root@yourserviceIP:~/</div><div class="line"><span class="selector-id">#git</span> clone git@yourserviceIP:<span class="number">23333</span>/home/git/gitosis-admin.git</div></pre></td></tr></table></figure></p>
@@ -238,7 +247,11 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;让我们换个姿势相爱，&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;以那些不为人所熟知的。&lt;
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;让我们换个姿势相爱&lt;br&gt;以那不为人所熟知的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;CentOS默认的SSH
     
     </summary>
     

@@ -161,7 +161,9 @@
     <entry>
       <title><![CDATA[从搬瓦工服务器到翻墙神器]]></title>
       <url>/2017/06/26/260617-shadowsocks/</url>
-      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;其实地上本没有墙，<br>&nbsp;&nbsp;&nbsp;&nbsp;翻的人多了，也便成了墙。</p>
+      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>其实地上本没有墙<br>人心复杂了，也便有了墙</p>
+</blockquote>
 <hr>
 <ol>
 <li>首先你必须拥有一个VPS，建议上<a href="https://bandwagonhost.com/aff.php?aff=16425" target="_blank" rel="external">搬瓦工官网</a>买个最便宜的VPS，如果你只是用来翻墙的话。</li>
@@ -197,7 +199,9 @@
     <entry>
       <title><![CDATA[CentOS修改SSH端口后的scp与git]]></title>
       <url>/2017/06/23/CentOS%E4%BF%AE%E6%94%B9SSH%E7%AB%AF%E5%8F%A3%E5%90%8E%E7%9A%84scp%E4%B8%8Egit/</url>
-      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;让我们换个姿势相爱，<br>&nbsp;&nbsp;&nbsp;&nbsp;以那些不为人所熟知的。</p>
+      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>让我们换个姿势相爱<br>以那不为人所熟知的</p>
+</blockquote>
 <hr>
 <p>CentOS默认的SSH端口一般为<strong>20</strong>，网上找的大部分案例也都是使用这个端口。<br>但为了防止有些脚本<em>恶意扫描</em>，建议修改SSH端口，例如：23333。</p>
 <p>那么接下来相对应的，scp与git命令也要带上特定的端口，才能正常使用。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#scp</span> -P <span class="number">23333</span> ~/.ssh/id_rsa<span class="selector-class">.pub</span> root@yourserviceIP:~/</div><div class="line"><span class="selector-id">#git</span> clone git@yourserviceIP:<span class="number">23333</span>/home/git/gitosis-admin.git</div></pre></td></tr></table></figure></p>
