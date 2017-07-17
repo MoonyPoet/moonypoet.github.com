@@ -3,13 +3,46 @@
   
     
     <entry>
+      <title><![CDATA[ES6学习笔记（三）]]></title>
+      <url>/2017/07/17/ECMAScript6StudyNotes-03/</url>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+<p><strong>作者：阮一锋</strong></p>
+<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>我用一生手绘红尘<br>只因你要的四季风华</p>
+</blockquote>
+<hr>
+<h3 id="数组的结构赋值"><a href="#数组的结构赋值" class="headerlink" title="数组的结构赋值"></a>数组的结构赋值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> [a, b, c] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"></div><div class="line"><span class="keyword">let</span> [a, ...b] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">a <span class="comment">// 1</span></div><div class="line">b <span class="comment">// [2, 3]</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> [a, b, ...c] = [<span class="string">'a'</span>]</div><div class="line">a <span class="comment">// "a"</span></div><div class="line">b <span class="comment">// undefined</span></div><div class="line">c <span class="comment">// []</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> [a, [b], d] = [<span class="number">1</span>, [<span class="number">2</span>, <span class="number">3</span>], <span class="number">4</span>]</div><div class="line">a <span class="comment">// 1</span></div><div class="line">b <span class="comment">// 2</span></div><div class="line">d <span class="comment">// 4</span></div><div class="line"></div><div class="line"><span class="comment">//指定默认值</span></div><div class="line"><span class="keyword">let</span> [x, y = <span class="string">'b'</span>] = [<span class="string">'a'</span>]</div><div class="line"><span class="comment">// x='a', y='b'</span></div><div class="line"></div><div class="line"><span class="comment">//如果默认值是一个表达式，那么这个表达式是惰性求值的，即只有在用到的时候，才会求值。</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">//这里不会执行</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'aaa'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> [x = f()] = [<span class="number">1</span>];</div></pre></td></tr></table></figure>
+<h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> &#123; <span class="built_in">bar</span>, foo &#125; = &#123; foo: <span class="string">"aaa"</span>, <span class="built_in">bar</span>: <span class="string">"bbb"</span> &#125;;</div><div class="line">foo <span class="comment">// "aaa"</span></div><div class="line"><span class="built_in">bar</span> <span class="comment">// "bbb"</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> &#123; baz &#125; = &#123; foo: <span class="string">"aaa"</span>, <span class="built_in">bar</span>: <span class="string">"bbb"</span> &#125;;</div><div class="line">baz <span class="comment">// undefined</span></div><div class="line"></div><div class="line"><span class="comment">//对象的解构赋值的内部机制，是先找到同名属性，然后再赋给对应的变量。真正被赋值的是后者，而不是前者。</span></div><div class="line"><span class="keyword">let</span> &#123; foo: baz &#125; = &#123; foo: <span class="string">"aaa"</span>, <span class="built_in">bar</span>: <span class="string">"bbb"</span> &#125;;</div><div class="line">baz <span class="comment">// "aaa"</span></div><div class="line">foo <span class="comment">// error: foo is not defined</span></div><div class="line"></div><div class="line"><span class="comment">//JavaScript 引擎会将&#123;x&#125;理解成一个代码块，从而发生语法错误。只有不将大括号写在行首，避免 JavaScript 将其解释为代码块。</span></div><div class="line"><span class="comment">// 正确的写法</span></div><div class="line"><span class="keyword">let</span> x;</div><div class="line">(&#123;x&#125; = &#123;x: <span class="number">1</span>&#125;);</div><div class="line"></div><div class="line"><span class="comment">//将Math对象的对数、正弦、余弦三个方法，赋值到对应的变量上，使用起来就会方便很多。</span></div><div class="line"><span class="keyword">let</span> &#123; <span class="built_in">log</span>, <span class="built_in">sin</span>, <span class="built_in">cos</span> &#125; = Math;</div></pre></td></tr></table></figure>
+<h3 id="字符串的解构赋值"><a href="#字符串的解构赋值" class="headerlink" title="字符串的解构赋值"></a>字符串的解构赋值</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">const [a, b, c, d, e] = <span class="string">'hello'</span>;</div><div class="line">a <span class="regexp">//</span> <span class="string">"h"</span></div><div class="line">b <span class="regexp">//</span> <span class="string">"e"</span></div><div class="line">c <span class="regexp">//</span> <span class="string">"l"</span></div><div class="line">d <span class="regexp">//</span> <span class="string">"l"</span></div><div class="line">e <span class="regexp">//</span> <span class="string">"o"</span></div><div class="line"></div><div class="line">let &#123;length : len&#125; = <span class="string">'hello'</span>;</div><div class="line">len <span class="regexp">//</span> <span class="number">5</span></div></pre></td></tr></table></figure>
+<h3 id="函数参数的解构赋值"><a href="#函数参数的解构赋值" class="headerlink" title="函数参数的解构赋值"></a>函数参数的解构赋值</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">[[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]].<span class="built_in">map</span>(([a, b]) =&gt; a + b);</div><div class="line"><span class="comment">// [ 3, 7 ]</span></div><div class="line"></div><div class="line">function <span class="built_in">move</span>(&#123;x = <span class="number">0</span>, y = <span class="number">0</span>&#125; = &#123;&#125;) &#123;</div><div class="line">  <span class="built_in">return</span> [x, y];</div><div class="line">&#125;</div><div class="line"><span class="built_in">move</span>(&#123;x: <span class="number">3</span>, y: <span class="number">8</span>&#125;); <span class="comment">// [3, 8]</span></div><div class="line"><span class="built_in">move</span>(&#123;x: <span class="number">3</span>&#125;); <span class="comment">// [3, 0]</span></div><div class="line"><span class="built_in">move</span>(&#123;&#125;); <span class="comment">// [0, 0]</span></div><div class="line"><span class="built_in">move</span>(); <span class="comment">// [0, 0]</span></div><div class="line"></div><div class="line">function <span class="built_in">move</span>(&#123;x, y&#125; = &#123; x: <span class="number">0</span>, y: <span class="number">0</span> &#125;) &#123;</div><div class="line">  <span class="built_in">return</span> [x, y];</div><div class="line">&#125;</div><div class="line"><span class="built_in">move</span>(&#123;x: <span class="number">3</span>, y: <span class="number">8</span>&#125;); <span class="comment">// [3, 8]</span></div><div class="line"><span class="built_in">move</span>(&#123;x: <span class="number">3</span>&#125;); <span class="comment">// [3, undefined]</span></div><div class="line"><span class="built_in">move</span>(&#123;&#125;); <span class="comment">// [undefined, undefined]</span></div><div class="line"><span class="built_in">move</span>(); <span class="comment">// [0, 0]</span></div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> 摸爬滚打 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ECMAScript6 </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ES6学习笔记（二）]]></title>
       <url>/2017/07/13/ECMAScript6StudyNotes-02/</url>
-      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+<p><strong>作者：阮一锋</strong></p>
+<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>任你在全世界妖娆<br>我只在花园里绽放</p>
 </blockquote>
 <hr>
-<h1 id="let-和-const-命令"><a href="#let-和-const-命令" class="headerlink" title="let 和 const 命令"></a>let 和 const 命令</h1><p><strong># for循环</strong></p>
+<h3 id="let-和-const-命令"><a href="#let-和-const-命令" class="headerlink" title="let 和 const 命令"></a>let 和 const 命令</h3><p><strong># for循环</strong></p>
 <p>JavaScript 引擎内部会记住上一轮循环的值，初始化本轮的变量i时，就在上一轮循环的基础上进行计算。（这就是为什么每次重声明变量，还是会累加的原因）</p>
 <p>另外，for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。</p>
 <p>栗子如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</div><div class="line">  <span class="keyword">let</span> i = <span class="string">'abc'</span>;</div><div class="line">  <span class="built_in">console</span>.log(i);</div><div class="line">&#125;</div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div><div class="line"><span class="comment">// abc</span></div></pre></td></tr></table></figure></p>
@@ -22,7 +55,7 @@
 <p><strong># 块级作用域</strong></p>
 <p>无块作用域的情况：内层变量可能会覆盖外层变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> tmp = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(tmp);</div><div class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</div><div class="line">    <span class="keyword">var</span> tmp = <span class="string">'hello world'</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">f(); <span class="comment">// undefined</span></div></pre></td></tr></table></figure></p>
 <hr>
-<h2 id="2017-07-16-更"><a href="#2017-07-16-更" class="headerlink" title="2017.07.16 更"></a>2017.07.16 更</h2><p><strong># do 表达式</strong><br>待试验</p>
+<h3 id="2017-07-16-更"><a href="#2017-07-16-更" class="headerlink" title="2017.07.16 更"></a>2017.07.16 更</h3><p><strong># do 表达式</strong><br>待试验</p>
 <p><strong># const</strong></p>
 <ul>
 <li>初始化必赋值</li>
@@ -57,7 +90,7 @@
     <entry>
       <title><![CDATA[《送你一匹马》摘要式笔记]]></title>
       <url>/2017/07/12/%E3%80%8A%E9%80%81%E4%BD%A0%E4%B8%80%E5%8C%B9%E9%A9%AC%E3%80%8B%E6%91%98%E8%A6%81%E5%BC%8F%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<h2 id="书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》"><a href="#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》" class="headerlink" title="书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》"></a>书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》</h2><h2 id="作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛"><a href="#作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛" class="headerlink" title="作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛"></a>作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛</h2><h2 id="出版社-nbsp-nbsp-北京十月文艺出版社"><a href="#出版社-nbsp-nbsp-北京十月文艺出版社" class="headerlink" title="出版社&nbsp;-&nbsp;北京十月文艺出版社"></a>出版社&nbsp;-&nbsp;北京十月文艺出版社</h2><p><strong># 爱马</strong></p>
+      <content type="html"><![CDATA[<h3 id="书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》"><a href="#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》" class="headerlink" title="书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》"></a>书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》</h3><h3 id="作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛"><a href="#作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛" class="headerlink" title="作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛"></a>作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛</h3><h3 id="出版社-nbsp-nbsp-北京十月文艺出版社"><a href="#出版社-nbsp-nbsp-北京十月文艺出版社" class="headerlink" title="出版社&nbsp;-&nbsp;北京十月文艺出版社"></a>出版社&nbsp;-&nbsp;北京十月文艺出版社</h3><p><strong># 爱马</strong></p>
 <blockquote>
 <p>并不执著于拥有一匹摸得着的骏马，那样就也只有一匹了，这个不够，有了真马，落了实相，不自由，反而怅然若失。</p>
 </blockquote>
@@ -78,7 +111,7 @@
 <p>但是急流勇退之前的持、守、进、执的坚持仍然有待时间的考验和自我价值的判断与选择。</p>
 </blockquote>
 <hr>
-<h2 id="17-07-13-更"><a href="#17-07-13-更" class="headerlink" title="17.07.13 更"></a>17.07.13 更</h2><p><strong># 野火烧不尽</strong></p>
+<h3 id="17-07-13-更"><a href="#17-07-13-更" class="headerlink" title="17.07.13 更"></a>17.07.13 更</h3><p><strong># 野火烧不尽</strong></p>
 <blockquote>
 <p>田在发芽了，守田的人，你能不能走？</p>
 <p>我不戴表，可是我知道已是什么时刻。</p>
@@ -110,7 +143,9 @@
     <entry>
       <title><![CDATA[ES6学习笔记（一）]]></title>
       <url>/2017/06/29/ECMAScript6StudyNotes-01/</url>
-      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+<p><strong>作者：阮一锋</strong></p>
+<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>还没能够亲吻你<br>却连发梢，都已触摸不及</p>
 </blockquote>
 <hr>
