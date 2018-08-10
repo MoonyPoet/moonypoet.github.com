@@ -3,9 +3,34 @@
   
     
     <entry>
+      <title><![CDATA['Diary-001']]></title>
+      <url>/2018/08/10/Diary-001/</url>
+      <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>羁绊 || 束缚</p>
+</blockquote>
+<hr>
+<h3 id="日本語"><a href="#日本語" class="headerlink" title="日本語"></a>日本語</h3><p>お土産(みやげ)<br>どういたしまして<br>タイ<br>何時ですが<br>こちらこそ</p>
+]]></content>
+      
+        <categories>
+            
+            <category> DIARY </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> diary </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ES6学习笔记（三）]]></title>
       <url>/2017/07/17/ECMAScript6StudyNotes-03/</url>
-      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>我用一生手绘红尘<br>只因你要的四季风华</p>
@@ -36,7 +61,7 @@
     <entry>
       <title><![CDATA[ES6学习笔记（二）]]></title>
       <url>/2017/07/13/ECMAScript6StudyNotes-02/</url>
-      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>任你在全世界妖娆<br>我只在花园里绽放</p>
@@ -120,6 +145,7 @@
 <p><strong># 不觉碧山暮 但闻万壑松</strong></p>
 <blockquote>
 <p>琢磨，是痛的，我是一块棱棱角角的方砚台，一块好砚，在于它石质的坚美和它润磨出来的墨香，而不是被磨成一个圆球，任人把玩。</p>
+<p>听蜀僧濬弹琴<br>李白<br>蜀僧抱绿绮，西下峨眉峰。<br>为我一挥手，如听万壑松。<br>客心洗流水，馀响入霜钟。<br>不觉碧山暮，秋云暗几重。</p>
 </blockquote>
 ]]></content>
       
@@ -143,7 +169,7 @@
     <entry>
       <title><![CDATA[ES6学习笔记（一）]]></title>
       <url>/2017/06/29/ECMAScript6StudyNotes-01/</url>
-      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+      <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>还没能够亲吻你<br>却连发梢，都已触摸不及</p>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>MoonyPoet</title>
-  <subtitle>所有近乎残忍的坚持，背后都隐藏着欲望的鬼魅</subtitle>
+  <subtitle>Live, for a life</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://moonypoet.github.io/"/>
-  <updated>2017-07-17T03:33:16.343Z</updated>
+  <updated>2018-08-10T02:58:23.563Z</updated>
   <id>http://moonypoet.github.io/</id>
   
   <author>
@@ -16,13 +16,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>&#39;Diary-001&#39;</title>
+    <link href="http://moonypoet.github.io/2018/08/10/Diary-001/"/>
+    <id>http://moonypoet.github.io/2018/08/10/Diary-001/</id>
+    <published>2018-08-10T02:34:47.000Z</published>
+    <updated>2018-08-10T02:58:23.563Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
+<p>羁绊 || 束缚</p>
+</blockquote>
+<hr>
+<h3 id="日本語"><a href="#日本語" class="headerlink" title="日本語"></a>日本語</h3><p>お土産(みやげ)<br>どういたしまして<br>タイ<br>何時ですが<br>こちらこそ</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;言&quot;&gt;&lt;a href=&quot;#言&quot; class=&quot;headerlink&quot; title=&quot;言&quot;&gt;&lt;/a&gt;言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;羁绊 || 束缚&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;日本語&quot;&gt;&lt;a href=&quot;#日本語&quot; c
+    
+    </summary>
+    
+      <category term="DIARY" scheme="http://moonypoet.github.io/categories/DIARY/"/>
+    
+    
+      <category term="diary" scheme="http://moonypoet.github.io/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ES6学习笔记（三）</title>
     <link href="http://moonypoet.github.io/2017/07/17/ECMAScript6StudyNotes-03/"/>
     <id>http://moonypoet.github.io/2017/07/17/ECMAScript6StudyNotes-03/</id>
     <published>2017-07-17T01:09:00.000Z</published>
-    <updated>2017-07-17T03:33:16.343Z</updated>
+    <updated>2017-07-17T03:39:20.707Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>我用一生手绘红尘<br>只因你要的四季风华</p>
@@ -35,7 +66,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：《ECMAScript 6 入门》&lt;/stro
+      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：&lt;a href=&quot;http://es6.rua
     
     </summary>
     
@@ -53,9 +84,9 @@
     <link href="http://moonypoet.github.io/2017/07/13/ECMAScript6StudyNotes-02/"/>
     <id>http://moonypoet.github.io/2017/07/13/ECMAScript6StudyNotes-02/</id>
     <published>2017-07-13T14:33:31.000Z</published>
-    <updated>2017-07-17T03:33:19.123Z</updated>
+    <updated>2017-07-17T03:39:25.201Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>任你在全世界妖娆<br>我只在花园里绽放</p>
@@ -91,7 +122,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：《ECMAScript 6 入门》&lt;/stro
+      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：&lt;a href=&quot;http://es6.rua
     
     </summary>
     
@@ -109,7 +140,7 @@
     <link href="http://moonypoet.github.io/2017/07/12/%E3%80%8A%E9%80%81%E4%BD%A0%E4%B8%80%E5%8C%B9%E9%A9%AC%E3%80%8B%E6%91%98%E8%A6%81%E5%BC%8F%E7%AC%94%E8%AE%B0/"/>
     <id>http://moonypoet.github.io/2017/07/12/《送你一匹马》摘要式笔记/</id>
     <published>2017-07-12T14:22:58.000Z</published>
-    <updated>2017-07-17T03:32:28.349Z</updated>
+    <updated>2017-07-17T03:42:18.179Z</updated>
     
     <content type="html"><![CDATA[<h3 id="书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》"><a href="#书名-nbsp-nbsp-nbsp-nbsp-nbsp-《送你一匹马》" class="headerlink" title="书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》"></a>书名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-《送你一匹马》</h3><h3 id="作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛"><a href="#作者-nbsp-nbsp-nbsp-nbsp-nbsp-nbsp-三毛" class="headerlink" title="作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛"></a>作者&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;三毛</h3><h3 id="出版社-nbsp-nbsp-北京十月文艺出版社"><a href="#出版社-nbsp-nbsp-北京十月文艺出版社" class="headerlink" title="出版社&nbsp;-&nbsp;北京十月文艺出版社"></a>出版社&nbsp;-&nbsp;北京十月文艺出版社</h3><p><strong># 爱马</strong></p>
 <blockquote>
@@ -141,6 +172,7 @@
 <p><strong># 不觉碧山暮 但闻万壑松</strong></p>
 <blockquote>
 <p>琢磨，是痛的，我是一块棱棱角角的方砚台，一块好砚，在于它石质的坚美和它润磨出来的墨香，而不是被磨成一个圆球，任人把玩。</p>
+<p>听蜀僧濬弹琴<br>李白<br>蜀僧抱绿绮，西下峨眉峰。<br>为我一挥手，如听万壑松。<br>客心洗流水，馀响入霜钟。<br>不觉碧山暮，秋云暗几重。</p>
 </blockquote>
 ]]></content>
     
@@ -164,9 +196,9 @@
     <link href="http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/"/>
     <id>http://moonypoet.github.io/2017/06/29/ECMAScript6StudyNotes-01/</id>
     <published>2017-06-29T14:29:44.000Z</published>
-    <updated>2017-07-17T03:33:22.642Z</updated>
+    <updated>2017-07-17T03:38:58.157Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：《ECMAScript 6 入门》</strong></p>
+    <content type="html"><![CDATA[<h3 id="笔记部分节选自如下书籍"><a href="#笔记部分节选自如下书籍" class="headerlink" title="笔记部分节选自如下书籍"></a>笔记部分节选自如下书籍</h3><p><strong>书名：<a href="http://es6.ruanyifeng.com/" target="_blank" rel="external">《ECMAScript 6 入门》</a></strong></p>
 <p><strong>作者：阮一锋</strong></p>
 <h3 id="言"><a href="#言" class="headerlink" title="言"></a>言</h3><blockquote>
 <p>还没能够亲吻你<br>却连发梢，都已触摸不及</p>
@@ -214,7 +246,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：《ECMAScript 6 入门》&lt;/stro
+      &lt;h3 id=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;a href=&quot;#笔记部分节选自如下书籍&quot; class=&quot;headerlink&quot; title=&quot;笔记部分节选自如下书籍&quot;&gt;&lt;/a&gt;笔记部分节选自如下书籍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;书名：&lt;a href=&quot;http://es6.rua
     
     </summary>
     
